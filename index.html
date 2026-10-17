@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="features.js" defer></script>
     <title>Daven || Portfolio</title>
   </head>
   <body>
@@ -24,8 +25,19 @@
           <li><a href="#project">Project</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
-            <button id="theme-switch">
-              <img src="icons/moon.svg" alt="theme-btn" />
+            <button
+              class="theme-switch"
+              id="theme-switch"
+              type="button"
+              aria-label="Toggle color theme"
+              aria-pressed="false"
+            >
+              <img
+                id="theme-icon"
+                src="icons/sun.svg"
+                alt=""
+                aria-hidden="true"
+              />
             </button>
           </li>
         </ul>

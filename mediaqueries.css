@@ -33,11 +33,16 @@
   }
 
   .skills-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .project-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-section {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   .project-card:hover {
@@ -47,7 +52,111 @@
 }
 
 @media (max-width: 600px) {
+  .navigation-bar {
+    padding: 6px;
+  }
+
+  .navigation-bar li {
+    margin: 2px 3px;
+    padding: 6px 5px;
+    font-size: 0.85rem;
+  }
+
+  .navigation-bar li:first-child,
+  .navigation-bar li:last-child {
+    width: 36px;
+  }
+
+  .hero-section {
+    padding-top: 72px;
+  }
+
+  .hero-container {
+    margin: 0 1.25rem;
+  }
+
+  .hero-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-container p {
+    font-size: 1.1rem;
+  }
+
+  .top-nav-btn {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0 1.25rem;
+  }
+
+  .top-nav-btn a {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .top-nav-btn button {
+    width: 100%;
+    margin-top: 0.75rem;
+    font-size: 1rem;
+  }
+
+  .about-section {
+    padding: 70px 1rem 2rem;
+  }
+
+  .about-section .profilebox img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .about-section .profilebox h1 {
+    font-size: 2rem;
+  }
+
+  .about-section .aboutbox p,
+  .footer-section p {
+    text-indent: 0;
+  }
+
+  .skills-grid,
   .project-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-section,
+  .footer-section {
+    padding: 65px 1rem 2rem;
+  }
+
+  .footer-section .contact-list li {
+    font-size: 1.1rem;
+  }
+
+  .footer-section a {
+    letter-spacing: 0.2rem;
+  }
+}
+
+@media (hover: none) {
+  .project-card:hover {
+    width: auto;
+    height: auto;
+    margin: 0;
+    transform: none;
+    box-shadow: none;
+  }
+
+  .project-card:hover img {
+    height: 175px;
+  }
+
+  .skill-card:hover {
+    transform: none;
+    box-shadow: none;
   }
 }
