@@ -1,121 +1,200 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
     <title>Daven || Portfolio</title>
   </head>
   <body>
     <header class="top-section" id="home">
       <nav class="navigation-bar">
-       <ul>
-        <li><a href="#home"><img src="icons/house.svg" alt="home-btn"></a></li> 
-        <li><a href="#about">About</a></li> 
-        <li><a href="#">Project</a></li> 
-        <li><a href="#">Contact</a></li> 
-        <li><button id="theme-switch"><img src="icons/moon.svg" alt="theme-btn"></button></li> 
-       </ul>
+        <ul>
+          <li>
+            <a href="#home"><img src="icons/house.svg" alt="home-btn" /></a>
+          </li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button id="theme-switch">
+              <img src="icons/moon.svg" alt="theme-btn" />
+            </button>
+          </li>
+        </ul>
       </nav>
 
       <section class="hero-section">
         <div class="hero-container">
           <h1>Hi, I'm Daven Kilat</h1>
           <h2>Aspiring Game Developer</h2>
-          <p>I build practical, user-friendly digital projects and enjoy turning imagination to real life applications.</p>
+          <p>
+            I build practical, user-friendly digital projects and enjoy turning
+            imagination to real life applications.
+          </p>
         </div>
 
         <div class="top-nav-btn">
-          <button class="toProject">
-            View My Projects ↗️
-          </button>
-          <button class="toContact">
-            Let's Collaborate! 📨
-          </button>
+          <a href="#project">
+            <button class="toProject">View My Projects ↗️</button>
+          </a>
+          <a href="#contact">
+            <button class="toContact">Let's Collaborate! 📨</button>
+          </a>
         </div>
       </section>
     </header>
 
-<main>
-  <section class="about-section" id="about">
-    <div class="profilebox">
-      <img src="./images/profilepic.jpg" alt="profile-pic">
-      <h1>Daven <br> Dharyl N. <br> Kilat</h1>
-    </div>
-    <div class="aboutbox">
-      <h2>Junior Developer</h2>
-      <p>An aspiring game developer constantly learning new things and improving myself everyday. 
-        Developing practical, user-friendly digital projects that can help society. 
-        A team player and a good collaborator with problem-solving skills and attention to detail.</p>
-      
-      <div class="skills-section">
-        <h3 class="skills-title">Skills</h3>
-        <div class="skills-grid">
-          <!-- Frontend -->
-          <div class="skill-card">
-            <div class="skill-card-header">
-              <img src="icons/frontend.svg" alt="Frontend" class="skill-icon">
-              <h3>Frontend</h3>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">HTML</span>
-              <span class="skill-tag">CSS</span>
-              <span class="skill-tag">JavaScript</span>
-            </div>
-          </div>
+    <main>
+      <section class="about-section" id="about">
+        <div class="profilebox">
+          <img src="./images/profilepic.jpg" alt="profile-pic" />
+          <h1>
+            Daven <br />
+            Dharyl N. <br />
+            Kilat
+          </h1>
+        </div>
+        <div class="aboutbox">
+          <h2>Junior Developer</h2>
+          <p>
+            An aspiring game developer constantly learning new things and
+            improving myself everyday. Developing practical, user-friendly
+            digital projects that can help society. A team player and a good
+            collaborator with problem-solving skills and attention to detail.
+          </p>
 
-          <!-- Backend -->
-          <div class="skill-card">
-            <div class="skill-card-header">
-              <img src="icons/backend.svg" alt="Backend" class="skill-icon">
-              <h3>Backend</h3>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">SQL</span>
-            </div>
-          </div>
+          <div class="skills-section">
+            <h3 class="skills-title">Skills</h3>
+            <div class="skills-grid">
+              <!-- Frontend -->
+              <div class="skill-card">
+                <div class="skill-card-header">
+                  <img
+                    src="icons/frontend.svg"
+                    alt="Frontend"
+                    class="skill-icon"
+                  />
+                  <h3>Frontend</h3>
+                </div>
+                <div class="skill-tags">
+                  <span class="skill-tag">HTML</span>
+                  <span class="skill-tag">CSS</span>
+                  <span class="skill-tag">JavaScript</span>
+                </div>
+              </div>
 
-          <!-- Databases -->
-          <div class="skill-card">
-            <div class="skill-card-header">
-              <img src="icons/database.svg" alt="Databases" class="skill-icon">
-              <h3>Databases</h3>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">MySQL</span>
-            </div>
-          </div>
+              <!-- Backend -->
+              <div class="skill-card">
+                <div class="skill-card-header">
+                  <img
+                    src="icons/backend.svg"
+                    alt="Backend"
+                    class="skill-icon"
+                  />
+                  <h3>Backend</h3>
+                </div>
+                <div class="skill-tags">
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">SQL</span>
+                </div>
+              </div>
 
-          <!-- Tools -->
-          <div class="skill-card">
-            <div class="skill-card-header">
-              <img src="icons/tools.svg" alt="Tools" class="skill-icon">
-              <h3>Tools</h3>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">GitHub</span>
-              <span class="skill-tag">VSCode</span>
-              <span class="skill-tag">Antigravity</span>
+              <!-- Databases -->
+              <div class="skill-card">
+                <div class="skill-card-header">
+                  <img
+                    src="icons/database.svg"
+                    alt="Databases"
+                    class="skill-icon"
+                  />
+                  <h3>Databases</h3>
+                </div>
+                <div class="skill-tags">
+                  <span class="skill-tag">MySQL</span>
+                </div>
+              </div>
+
+              <!-- Tools -->
+              <div class="skill-card">
+                <div class="skill-card-header">
+                  <img src="icons/tools.svg" alt="Tools" class="skill-icon" />
+                  <h3>Tools</h3>
+                </div>
+                <div class="skill-tags">
+                  <span class="skill-tag">Git</span>
+                  <span class="skill-tag">GitHub</span>
+                  <span class="skill-tag">VSCode</span>
+                  <span class="skill-tag">Antigravity</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="skills-action">
-          <a href="#project" class="projects-btn">Explore Projects --&gt;</a>
+      <section class="project-section" id="project">
+        <h1>Projects</h1>
+        <div class="project-grid">
+          <div class="project-card">
+            <img src="images/dummypic.jpg" alt="Project 1" />
+            <h3>Project 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              quisquam numquam obcaecati architecto corporis veritatis
+              repudiandae id accusamus voluptates in.
+            </p>
+          </div>
+          <div class="project-card">
+            <img src="images/dummypic.jpg" alt="Project 1" />
+            <h3>Project 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              quisquam numquam obcaecati architecto corporis veritatis
+              repudiandae id accusamus voluptates in.
+            </p>
+          </div>
+          <div class="project-card">
+            <img src="images/dummypic.jpg" alt="Project 1" />
+            <h3>Project 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              quisquam numquam obcaecati architecto corporis veritatis
+              repudiandae id accusamus voluptates in.
+            </p>
+          </div>
         </div>
+      </section>
+    </main>
+
+    <footer class="footer-section" id="contact">
+      <div class="footer-container">
+        <h2>Contact Me</h2>
+        <p>
+          If you have any questions or want to collaborate, feel free to reach
+          out to me through the following channels:
+        </p>
+        <ul class="contact-list">
+          <li>
+            <a href="mailto:example@email.com">Email</a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+          </li>
+        </ul>
       </div>
-    </div>
-  </section>  
-
-</main>
-
-
-
+    </footer>
   </body>
 </html>

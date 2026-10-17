@@ -1,10 +1,9 @@
 :root {
---primary-color:#444444;
---secondary-color:#2e2d2d;
---tertiary-color:#737373;
---accent-color:#F3F4F4;
+  --primary-color: #444444;
+  --secondary-color: #2e2d2d;
+  --tertiary-color: #737373;
+  --accent-color: #f3f4f4;
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -12,7 +11,7 @@ html {
 
 * {
   box-sizing: border-box;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 body {
   margin: 0;
@@ -21,14 +20,17 @@ body {
   color: var(--accent-color);
 }
 
-header, .about-section, .project-section, .contact-section {
+header,
+.about-section,
+.project-section,
+.contact-section {
   min-height: 100vh;
 }
 
 /* Navigation Bar */
 
 .navigation-bar {
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   display: flex;
   justify-content: flex-end;
   border-bottom: 1px solid var(--tertiary-color);
@@ -57,24 +59,26 @@ header, .about-section, .project-section, .contact-section {
   display: flex;
   align-items: center;
   margin: 3px 12px;
-  padding:6px 12px;
+  padding: 6px 12px;
   background-color: var(--secondary-color);
   border-radius: 5px;
   border: 1px solid var(--tertiary-color);
   cursor: pointer;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 }
 
-.navigation-bar li:hover{
+.navigation-bar li:hover {
   background-color: var(--primary-color);
-border-color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 .navigation-bar a {
   text-decoration: none;
 }
 
 .navigation-bar a::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -90,23 +94,20 @@ border-color: var(--accent-color);
   align-items: center;
   height: 18px;
 }
-.navigation-bar li:first-child{
-margin-right: auto ;
-display: flex;
-justify-content: center;
+.navigation-bar li:first-child {
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
   padding: 3px 5px;
   width: 45px;
 }
 
-
-
-.navigation-bar li:last-child{
-display: flex;
-justify-content: center;
+.navigation-bar li:last-child {
+  display: flex;
+  justify-content: center;
   padding: 3px 5px;
   width: 45px;
 }
-
 
 .navigation-bar li img {
   display: flex;
@@ -114,7 +115,7 @@ justify-content: center;
   align-items: center;
   width: 18px;
   height: 18px;
-   filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 
 .hero-section {
@@ -124,27 +125,27 @@ justify-content: center;
 .hero-container h1 {
   font-size: 4.3rem;
   font-weight: bold;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 .hero-container h2 {
   font-size: 2.5rem;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 .hero-container h1,
-.hero-container h2{
+.hero-container h2 {
   color: var(--accent-color);
 }
 
 .hero-container p {
   color: #c0c4c4;
   font-size: 1.5rem;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 .hero-container {
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  align-items: flex-start;
   margin-left: 4rem;
 }
 
@@ -153,26 +154,25 @@ justify-content: center;
   justify-content: space-around;
 }
 
-.top-nav-btn button{
+.top-nav-btn button {
   padding: 8px;
   font-size: 1.2rem;
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
   margin-top: 4rem;
-  padding:10px 5px;
+  padding: 10px 5px;
   width: 225px;
-  border-right:5px ;
+  border-right: 5px;
   transition: all 0.2s ease;
 }
 
-.top-nav-btn .toProject{
+.top-nav-btn .toProject {
   background-color: #4685cf;
   background-color: var(--accent-color);
   color: var(--secondary-color);
   font-weight: 700;
-
 }
 
 .top-nav-btn .toProject:hover {
@@ -181,8 +181,8 @@ justify-content: center;
   box-shadow: 0 4px 12px rgba(243, 244, 244, 0.15);
 }
 
-.top-nav-btn .toContact{
-  background-color: transparent ;
+.top-nav-btn .toContact {
+  background-color: transparent;
   border: 2px solid var(--tertiary-color);
   color: var(--accent-color);
 }
@@ -287,7 +287,9 @@ justify-content: center;
   flex-direction: column;
   justify-content: space-between;
   gap: 0.65rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .skill-card:hover {
@@ -331,7 +333,9 @@ justify-content: center;
   border-radius: 9999px;
   display: inline-block;
   line-height: 1.2;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
   user-select: none;
 }
 
@@ -340,35 +344,102 @@ justify-content: center;
   transform: translateY(-1px);
 }
 
-.skills-action {
+.project-section {
+  min-height: 100vh;
+  height: auto;
+  background-color: var(--secondary-color);
   display: flex;
-  justify-content: flex-end;
-  margin-top: 0.75rem;
-  width: 100%;
+  flex-direction: column;
+  padding: 65px 3rem 1.5rem 3rem;
 }
 
-.projects-btn {
-  background-color: #000000;
-  color: #ffffff;
-  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
-  font-weight: 700;
-  margin-top: 2rem;
-  padding: 9px 24px;
-  border-radius: 9999px;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 0.4px;
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  gap: 1rem;
+}
+
+.project-card {
+  background-color: #686868;
+  border-radius: 16px;
+  padding: 0.85rem 1.15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.65rem;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
   cursor: pointer;
-  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
 }
 
-.projects-btn:hover {
-  background-color: #181818;
+.project-card img {
+  width: 100%;
+  height: 175px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: height 0.25s ease;
+}
+
+.project-card:hover {
+  position: relative;
+  z-index: 1;
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  width: calc(100% + 5rem);
+  height: auto;
+  margin: -2.5rem;
 }
 
+.project-card:hover img {
+  height: 280px;
+}
 
+/* Contact Section */
+.footer-section {
+  min-height: 40vh;
+  height: auto;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  padding: 65px 3rem 1.5rem 3rem;
+}
+
+.footer-section h2 {
+  color: var(--accent-color);
+  font-size: clamp(1.3rem, 1.8vw, 1.8rem);
+  font-weight: 700;
+  margin: 0 0 0.6rem 0;
+  text-align: left;
+}
+
+.footer-section p {
+  font-size: clamp(1.1rem, 1.25vw, 1.3rem);
+  color: var(--accent-color);
+  line-height: 1.6;
+  text-indent: 2rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.footer-section .contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: clamp(1.4rem, 1.3vw, 1.4rem);
+}
+
+.footer-section a {
+  color: var(--accent-color);
+  letter-spacing: 0.6rem;
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.footer-section a:hover {
+  color: blue;
+  transition: color 0.2s ease;
+  transform: translateY(2px);
+}
