@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <title>Daven || Portfolio</title>
   </head>
   <body>
-    <header class="top-section">
+    <header class="top-section" id="home">
       <nav class="navigation-bar">
        <ul>
-        <li><a href="#"><img src="/icons/house.svg" alt="home-btn"></a></li> 
-        <li><a href="#">About</a></li> 
+        <li><a href="#home"><img src="icons/house.svg" alt="home-btn"></a></li> 
+        <li><a href="#about">About</a></li> 
         <li><a href="#">Project</a></li> 
         <li><a href="#">Contact</a></li> 
         <li><button id="theme-switch"><img src="icons/moon.svg" alt="theme-btn"></button></li> 
@@ -35,6 +39,83 @@
         </div>
       </section>
     </header>
+
+<main>
+  <section class="about-section" id="about">
+    <div class="profilebox">
+      <img src="./images/profilepic.jpg" alt="profile-pic">
+      <h1>Daven <br> Dharyl N. <br> Kilat</h1>
+    </div>
+    <div class="aboutbox">
+      <h2>Junior Developer</h2>
+      <p>An aspiring game developer constantly learning new things and improving myself everyday. 
+        Developing practical, user-friendly digital projects that can help society. 
+        A team player and a good collaborator with problem-solving skills and attention to detail.</p>
+      
+      <div class="skills-section">
+        <h3 class="skills-title">Skills</h3>
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <img src="icons/frontend.svg" alt="Frontend" class="skill-icon">
+              <h3>Frontend</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <img src="icons/backend.svg" alt="Backend" class="skill-icon">
+              <h3>Backend</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <img src="icons/database.svg" alt="Databases" class="skill-icon">
+              <h3>Databases</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">MySQL</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <img src="icons/tools.svg" alt="Tools" class="skill-icon">
+              <h3>Tools</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">VSCode</span>
+              <span class="skill-tag">Antigravity</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-action">
+          <a href="#project" class="projects-btn">Explore Projects --&gt;</a>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+</main>
+
+
 
   </body>
 </html>

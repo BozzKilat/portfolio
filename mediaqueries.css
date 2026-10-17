@@ -1,0 +1,38 @@
+@media (max-height: 750px) {
+  .about-section {
+    padding-top: 55px;
+    padding-bottom: 1rem;
+  }
+
+  .skill-card {
+    padding: 0.65rem 0.95rem;
+    gap: 0.5rem;
+  }
+
+  .skills-grid {
+    gap: 0.55rem 0.85rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-section {
+    flex-direction: column;
+    padding: 75px 1.5rem 2rem 1.5rem;
+    justify-content: flex-start;
+  }
+
+  .about-section .profilebox,
+  .about-section .aboutbox {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about-section .profilebox {
+    margin-bottom: 1.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

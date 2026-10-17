@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="38" height="38">
+  <!-- Unit 1 -->
+  <rect x="2" y="2.5" width="20" height="5.2" rx="1.5" fill="#1e1e1e" stroke="#ffffff" stroke-width="1.8" />
+  <line x1="4.5" y1="4.2" x2="13.5" y2="4.2" stroke="#ffffff" stroke-width="1.1" stroke-linecap="round" />
+  <line x1="4.5" y1="5.1" x2="13.5" y2="5.1" stroke="#ffffff" stroke-width="1.1" stroke-linecap="round" />
+  <line x1="4.5" y1="6.0" x2="13.5" y2="6.0" stroke="#ffffff" stroke-width="1.1" stroke-linecap="round" />
+  <circle cx="16.5" cy="5.1" r="0.9" fill="#ffffff" />
+  <circle cx="19.2" cy="5.1" r="0.9" fill="#ffffff" />
+
+  <!-- Unit 2 -->
+  <rect x="2" y="9.4" width="20" height="5.2" rx="1.5" fill="#1e1e1e" stroke="#ffffff" stroke-width="1.8" />
+  <line x1="4.5" y1="11.1" x2="13.5" y2="11.1" stroke="#ffffff" stroke-width="1.1" stroke-linecap="round" />
+  <line x1="4.5" y1="12.0" x2="13.5" y2="12.0" stroke="#ffffff" stroke-width="1.1" stroke-linecap="round" />
+  <line x1="4.5" y1="12.9" x2="13.5" y2="12.9" stroke="#ffffff" stroke-width="1.1" stroke-linecap="round" />
+  <circle cx="16.5" cy="12.0" r="0.9" fill="#ffffff" />
+  <circle cx="19.2" cy="12.0" r="0.9" fill="#ffffff" />
+
+  <!-- Unit 3 -->
+  <rect x="2" y="16.3" width="20" height="5.2" rx="1.5" fill="#1e1e1e" stroke="#ffffff" stroke-width="1.8" />
+  <line x1="4.5" y1="18.0" x2="13.5" y2="18.0" stroke="#ffffff" stroke-width="1.1" stroke-linecap="round" />
+  <line x1="4.5" y1="18.9" x2="13.5" y2="18.9" stroke="#ffffff" stroke-width="1.1" stroke-linecap="round" />
+  <line x1="4.5" y1="19.8" x2="13.5" y2="19.8" stroke="#ffffff" stroke-width="1.1" stroke-linecap="round" />
+  <circle cx="16.5" cy="18.9" r="0.9" fill="#ffffff" />
+  <circle cx="19.2" cy="18.9" r="0.9" fill="#ffffff" />
+</svg>
