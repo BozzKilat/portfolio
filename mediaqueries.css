@@ -15,6 +15,17 @@
 }
 
 @media (max-width: 900px) {
+  .navigation-bar {
+    padding: 6px 10px;
+  }
+
+  .navigation-bar li {
+    flex: 0 0 auto;
+    margin: 2px 10px;
+    padding: 6px 9px;
+    white-space: nowrap;
+  }
+
   .about-section {
     flex-direction: column;
     padding: 75px 1.5rem 2rem 1.5rem;
@@ -56,15 +67,35 @@
     padding: 6px;
   }
 
-  .navigation-bar li {
-    margin: 2px 3px;
-    padding: 6px 5px;
-    font-size: 0.85rem;
+  .navigation-bar ul {
+    align-items: stretch;
+    gap: 4px;
   }
 
-  .navigation-bar li:first-child,
+  .navigation-bar li {
+    flex: 1 1 0;
+    justify-content: center;
+    min-width: 0;
+    margin: 0;
+    padding: 6px 2px;
+    font-size: 0.85rem;
+    min-height: 44px;
+  }
+
+  .navigation-bar li:first-child {
+    flex: 0 0 44px;
+    margin: 0;
+  }
+
   .navigation-bar li:last-child {
-    width: 36px;
+    flex: 0 0 44px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation-bar .theme-switch {
+    width: 44px;
+    height: 44px;
   }
 
   .hero-section {
@@ -142,7 +173,31 @@
   }
 }
 
+@media (max-width: 360px) {
+  .navigation-bar {
+    padding: 4px;
+  }
+
+  .navigation-bar li {
+    font-size: 0.78rem;
+  }
+}
+
 @media (hover: none) {
+  .navigation-bar li {
+    min-height: 44px;
+  }
+
+  .navigation-bar li:first-child,
+  .navigation-bar li:last-child,
+  .navigation-bar .theme-switch {
+    width: 44px;
+  }
+
+  .navigation-bar .theme-switch {
+    height: 44px;
+  }
+
   .project-card:hover {
     width: auto;
     height: auto;
