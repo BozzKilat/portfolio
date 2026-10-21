@@ -67,7 +67,12 @@
     <main>
       <section class="about-section" id="about">
         <div class="profilebox animate-on-scroll">
-          <img src="./images/profilepic.jpg" alt="profile-pic" />
+          <img
+            src="./images/profilepic.jpg"
+            alt="profile-pic"
+            oncontextmenu="return false;"
+            draggable="false"
+          />
           <h1>
             Daven <br />
             Dharyl N. <br />
@@ -114,7 +119,6 @@
                   <h3>Backend</h3>
                 </div>
                 <div class="skill-tags">
-                  <span class="skill-tag">Python</span>
                   <span class="skill-tag">SQL</span>
                 </div>
               </div>
@@ -144,43 +148,42 @@
                   <span class="skill-tag">Git</span>
                   <span class="skill-tag">GitHub</span>
                   <span class="skill-tag">VSCode</span>
-                  <span class="skill-tag">Antigravity</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
       <section class="project-section" id="project">
         <h1 class="animate-on-scroll">Projects</h1>
         <div class="project-grid animate-on-scroll">
           <div class="project-card">
-            <img src="images/dummypic.jpg" alt="Project 1" />
-            <h3>Project 1</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              quisquam numquam obcaecati architecto corporis veritatis
-              repudiandae id accusamus voluptates in.
-            </p>
-          </div>
-          <div class="project-card">
-            <img src="images/dummypic.jpg" alt="Project 1" />
-            <h3>Project 2</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              quisquam numquam obcaecati architecto corporis veritatis
-              repudiandae id accusamus voluptates in.
-            </p>
-          </div>
-          <div class="project-card">
-            <img src="images/dummypic.jpg" alt="Project 1" />
-            <h3>Project 3</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              quisquam numquam obcaecati architecto corporis veritatis
-              repudiandae id accusamus voluptates in.
-            </p>
+            <div class="project-preview">
+              <video
+                class="firstProject video"
+                controls
+                playsinline
+                muted
+                loop
+                preload="metadata"
+              >
+                <source src="video/firstProject.mp4" type="video/mp4" />
+                Your browser does not support the video element.
+              </video>
+              <button
+                class="project-preview-trigger"
+                type="button"
+                aria-label="Play miniCalculator video preview"
+              >
+                <img
+                  src="images/miniCalculator.png"
+                  alt="miniCalculator preview"
+                />
+              </button>
+            </div>
+            <h3>miniCalculator</h3>
+            <span class="language skill-tag">JavaScript</span>
+            <p>A simple calculator using Javascript.</p>
           </div>
         </div>
       </section>
@@ -198,9 +201,7 @@
             <a href="mailto:example@email.com">Email</a>
           </li>
           <li>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank"
-              >LinkedIn</a
-            >
+            <a href="https://linkedin.com/in/yourprofile" target="_blank"></a>
           </li>
           <li>
             <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
